@@ -2,19 +2,20 @@ import { useState, useEffect } from 'react';
 import { get } from '../services/fetchApi';
 
 
-export const useSearchTerm = searchTerm => {
+export const useSearchTerm = value => {
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState(value);
   const [searchTermResponse, setsearchTermResponse] = useState([]);
   
   useEffect(() => {
-    get(`/movies/search/${searchTerm}`)
+    get(`movies/search/${searchTerm}`)
       .then(resObject => {
-        setsearchTermResponse(resObject);
+        setsearchTermResponse(resObject.titles);
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [searchTerm]);
   
-  return { loading, searchTermResponse };
+  return { loading, searchTermResponse, setSearchTerm };
 };
 
 export const useMovieDetailsById = id => {
@@ -22,7 +23,7 @@ export const useMovieDetailsById = id => {
   const [movies, setMovies] = useState([]);
   
   useEffect(() => {
-    get(`/movies/film/${id}`)
+    get(`movies/film/${id}`)
       .then(resObject => {
         setMovies(resObject);
       })
@@ -37,7 +38,7 @@ export const UseVotes = ref => {
   const [votes, setVotes] = useState([]);
     
   useEffect(() => {
-    get(`/movies/filmRef/${ref}`)
+    get(`movies/filmRef/${ref}`)
       .then(resObject => {
         setVotes(resObject);
       })

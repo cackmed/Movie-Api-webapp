@@ -1,17 +1,20 @@
 import React from 'react';
-import { useSearchTerm } from '../hooks/getData';
+import Search from './SearchPage/Search';
+import MovieDetailContainer from './SearchPage/DetailPage/MovieDetailPageContainer';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 export default function App() {
-  const { loading, searchTermResponse } = useSearchTerm('inception');
+
 
 
   return (
     <>
-      <h1>
-          Hello World
-      </h1>
-      <button onClick={() => console.log('this is the search result:', searchTermResponse)}>Click Me</button>
+      <Router>
+        <Route exact path='/' component={Search} />
+        <Route path='/movieDetail/:movie_id' component={MovieDetailContainer} />
+      </Router>
     </>
-    
+
   );
 }
