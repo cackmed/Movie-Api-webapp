@@ -1,0 +1,14 @@
+.article {
+
+    img {
+        height: 20rem;
+        width: auto;
+        padding-bottom: 0.3rem;
+        align-items: center;
+    }
+
+    h1, p {
+        text-decoration: none;
+        text-align: center;  
+    }
+}

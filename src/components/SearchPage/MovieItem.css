@@ -1,0 +1,15 @@
+.article {
+    display: flex;
+    align-items: center;
+    
+    img {
+        height: 20rem;
+        width: auto;
+        padding-bottom: 0.3rem;
+    }
+
+    h3 {
+        text-decoration: none;
+        text-align: center;  
+    }
+}
