@@ -15,21 +15,26 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+Search Page:
 ![search-page](/assets/screen-shot1.png) 
+
+Detail Page
+
 ![detail-page](/assets/screen-shot2.png) 
 
-Short description of the project:
+Short description of the project: This is a a React front-end built in conjunction with a mongoDb back-end and proxy server. This web-app is built using React hooks and allows for a user to search through the 
+unofficial imbd movie database to find the more details on their chosen movies and leave a symbol of thier satisfation with the movie by upvoting or downvoting it. 
 
 <!-- BUILT WITH -->
 ### Built With
+React
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these steps.
-Include any configuration file setup,  api keys,  local server daemons that need to run etc.
+Make sure to create a .env file and configure it to the specfications within the existing .env-example file
+
 
 <!-- PREREQUISITES -->
 ### Prerequisites
@@ -39,16 +44,13 @@ Install the following packages
 ```sh
 npm install npm@latest -g
 ```
-```sh
-npm install expo-cli --global
-```
 
 <!-- INSTALLATION -->
 ### Installation
 
 1. Clone the repo
 ```sh
-git clone https://url/repo_name.git
+git clone https://github.com/cackmed/Movie-Api-webapp.git
 ```
 2. Install NPM packages
 ```sh
@@ -59,12 +61,13 @@ npm install
 <!-- RELEASE -->
 ## Release
 
-build/Export instructions for IOS 
-build/export instructions for android 
+Dev Server
 
-<!-- USEFUL COMMANDS -->
-## Useful commands
+* npm run start 
 
+Source Map
+
+* npm run buld
 
 
 <!-- CONTRIBUTING -->
