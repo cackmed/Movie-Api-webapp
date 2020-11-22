@@ -7,9 +7,10 @@ const MovieDetailContainer = ({ match }) => {
   const { loading, movies } = useMovieDetailsById(match.params.movie_id);
   const { votes } = UseVotes(match.params.movie_id);
 
+
   const element = (
-    <MovieDetails title={movies.title} imageSource={movies.poster} length={movies.length} 
-      plot={movies.plot} voteData = {votes} />
+    <MovieDetails refrence={movies.id} title={movies.title} imageSource={movies.poster} length={movies.length} 
+      plot={movies.plot} voteData={votes[0]}/>
   );
   
 
