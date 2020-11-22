@@ -25,6 +25,8 @@ Detail Page
 Short description of the project: This is a a React front-end built in conjunction with a mongoDb back-end and proxy server. This web-app is built using React hooks and allows for a user to search through the 
 unofficial imbd movie database to find the more details on their chosen movies and leave a symbol of thier satisfation with the movie by upvoting or downvoting it. 
 
+Link to back-end repo: https://github.com/cackmed/movie-api
+
 <!-- BUILT WITH -->
 ### Built With
 React
