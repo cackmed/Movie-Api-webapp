@@ -16,8 +16,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![search-page](/assets/screenshot1.png) 
-![detail-page](/assets/screenshot2.png) 
+![search-page](/assets/screen-shot1.png) 
+![detail-page](/assets/screen-shot2.png) 
 
 Short description of the project:
 
