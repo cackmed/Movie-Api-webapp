@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MovieItem from './MovieItem';
 import PropTypes from 'prop-types';
 import { useSearchTerm } from '../../hooks/getData';
+import { Redirect } from 'react-router';
 
 
 const Search = () => {
@@ -17,6 +18,19 @@ const Search = () => {
     );
   });
 
+    // const redirectTest = () => {
+  //   const newWindow = window.open('', '_blank')
+  //   setTimeout(() => {   newWindow.location.href = 'http://www.google.com'  }, 7000)
+  // }
+
+
+  const redirectTest = () => {
+
+    setTimeout(() => { window.open('https://www.google.com', '_blank') }, 5000)
+
+  }
+
+
 
   return (
     <>
@@ -24,6 +38,7 @@ const Search = () => {
         <h2>Type what Movie you want to search for and then click the button to see the results</h2>
         <input type='text' onChange={({ target }) => setSearch(target.value)}></input> 
         <button onClick={() => setSearchTerm(search)}>Click Here</button>
+        <button onClick={() => redirectTest()}>test pop up</button>
       </article>
       {loading ? <div>
         <h1>Loading...</h1>
