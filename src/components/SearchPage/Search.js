@@ -20,16 +20,11 @@ const Search = () => {
 
     const redirectTest = () => {
     const newWindow = window.open('', '_blank')
+
     setTimeout(() => {   newWindow.location.href = 'http://www.google.com'  }, 7000)
+    setTimeout(() => {   newWindow.close()  }, 12000)
+
   }
-
-
-  // const redirectTest = () => {
-
-  //   setTimeout(() => { window.open('https://www.google.com', '_blank') }, 5000)
-
-  // }
-
 
 
   return (
